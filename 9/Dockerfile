@@ -6,6 +6,7 @@ ADD start /start
 ENV DEBIAN_FRONTEND=noninteractive \
     OV_PASSWORD=admin
 
+
 RUN apt-get update && \
     apt-get install software-properties-common --no-install-recommends -yq && \
     add-apt-repository ppa:mikesplain/openvas -y && \
